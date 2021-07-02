@@ -1,0 +1,264 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Topbar = Instance.new("Frame")
+local NexoDevUIText = Instance.new("TextLabel")
+local DevAccessText = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local GUI1 = Instance.new("Frame")
+local BedwarsGUI = Instance.new("TextButton")
+local GUI2 = Instance.new("Frame")
+local printStruditywashere = Instance.new("TextButton")
+local N1 = Instance.new("TextButton")
+local N2 = Instance.new("TextButton")
+local HideButton = Instance.new("TextButton")
+local ShowButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Frame.BorderColor3 = Color3.fromRGB(21, 21, 21)
+Frame.Position = UDim2.new(0.275431871, 0, 0.216318786, 0)
+Frame.Size = UDim2.new(0, 467, 0, 299)
+
+Topbar.Name = "Topbar"
+Topbar.Parent = Frame
+Topbar.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Topbar.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Topbar.Size = UDim2.new(0, 467, 0, 52)
+
+NexoDevUIText.Name = "NexoDevUIText"
+NexoDevUIText.Parent = Topbar
+NexoDevUIText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NexoDevUIText.BackgroundTransparency = 1.000
+NexoDevUIText.Position = UDim2.new(0.226980731, 0, 0, 0)
+NexoDevUIText.Size = UDim2.new(0, 254, 0, 50)
+NexoDevUIText.Font = Enum.Font.PatrickHand
+NexoDevUIText.Text = "NexoDev UI"
+NexoDevUIText.TextColor3 = Color3.fromRGB(239, 239, 239)
+NexoDevUIText.TextScaled = true
+NexoDevUIText.TextSize = 14.000
+NexoDevUIText.TextStrokeColor3 = Color3.fromRGB(57, 57, 57)
+NexoDevUIText.TextStrokeTransparency = 0.000
+NexoDevUIText.TextWrapped = true
+
+DevAccessText.Name = "DevAccessText"
+DevAccessText.Parent = Topbar
+DevAccessText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DevAccessText.BackgroundTransparency = 1.000
+DevAccessText.Position = UDim2.new(0.0235546045, 0, 0.173076928, 0)
+DevAccessText.Size = UDim2.new(0, 84, 0, 32)
+DevAccessText.Font = Enum.Font.SciFi
+DevAccessText.Text = "Dev Access"
+DevAccessText.TextColor3 = Color3.fromRGB(122, 85, 0)
+DevAccessText.TextScaled = true
+DevAccessText.TextSize = 14.000
+DevAccessText.TextStrokeColor3 = Color3.fromRGB(57, 57, 57)
+DevAccessText.TextStrokeTransparency = 0.000
+DevAccessText.TextWrapped = true
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(21, 21, 21)
+ScrollingFrame.Position = UDim2.new(0.0235546045, 0, 0.357859522, 0)
+ScrollingFrame.Size = UDim2.new(0, 445, 0, 181)
+
+GUI1.Name = "GUI1"
+GUI1.Parent = ScrollingFrame
+GUI1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUI1.BackgroundTransparency = 1.000
+GUI1.Size = UDim2.new(0, 444, 0, 182)
+GUI1.Visible = false
+
+BedwarsGUI.Name = "BedwarsGUI"
+BedwarsGUI.Parent = GUI1
+BedwarsGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BedwarsGUI.BackgroundTransparency = 0.900
+BedwarsGUI.Position = UDim2.new(0.274157315, 0, 0.115384616, 0)
+BedwarsGUI.Size = UDim2.new(0, 200, 0, 50)
+BedwarsGUI.Font = Enum.Font.SourceSans
+BedwarsGUI.Text = "Bedwars OP GUI"
+BedwarsGUI.TextColor3 = Color3.fromRGB(239, 239, 239)
+BedwarsGUI.TextScaled = true
+BedwarsGUI.TextSize = 14.000
+BedwarsGUI.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
+BedwarsGUI.TextStrokeTransparency = 0.000
+BedwarsGUI.TextWrapped = true
+
+GUI2.Name = "GUI2"
+GUI2.Parent = ScrollingFrame
+GUI2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUI2.BackgroundTransparency = 1.000
+GUI2.Size = UDim2.new(0, 444, 0, 182)
+GUI2.Visible = false
+
+printStruditywashere.Name = "print(\"Strudity was here.\")"
+printStruditywashere.Parent = GUI2
+printStruditywashere.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+printStruditywashere.BackgroundTransparency = 0.900
+printStruditywashere.Position = UDim2.new(0.274157315, 0, 0.115384616, 0)
+printStruditywashere.Size = UDim2.new(0, 200, 0, 50)
+printStruditywashere.Font = Enum.Font.SourceSans
+printStruditywashere.Text = "Bedwars OP GUI"
+printStruditywashere.TextColor3 = Color3.fromRGB(239, 239, 239)
+printStruditywashere.TextScaled = true
+printStruditywashere.TextSize = 14.000
+printStruditywashere.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
+printStruditywashere.TextStrokeTransparency = 0.000
+printStruditywashere.TextWrapped = true
+
+N1.Name = "N1"
+N1.Parent = Frame
+N1.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+N1.BorderColor3 = Color3.fromRGB(23, 23, 23)
+N1.Position = UDim2.new(0.0235546045, 0, 0.204013377, 0)
+N1.Size = UDim2.new(0, 203, 0, 29)
+N1.Font = Enum.Font.SourceSans
+N1.Text = "1"
+N1.TextColor3 = Color3.fromRGB(239, 239, 239)
+N1.TextScaled = true
+N1.TextSize = 14.000
+N1.TextStrokeTransparency = 0.000
+N1.TextWrapped = true
+
+N2.Name = "N2"
+N2.Parent = Frame
+N2.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+N2.BorderColor3 = Color3.fromRGB(23, 23, 23)
+N2.Position = UDim2.new(0.541755915, 0, 0.204013377, 0)
+N2.Size = UDim2.new(0, 203, 0, 29)
+N2.Font = Enum.Font.SourceSans
+N2.Text = "2"
+N2.TextColor3 = Color3.fromRGB(239, 239, 239)
+N2.TextScaled = true
+N2.TextSize = 14.000
+N2.TextStrokeTransparency = 0.000
+N2.TextWrapped = true
+
+HideButton.Name = "HideButton"
+HideButton.Parent = Frame
+HideButton.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+HideButton.BorderColor3 = Color3.fromRGB(21, 21, 21)
+HideButton.Position = UDim2.new(0.869379163, 0, 0.0301003344, 0)
+HideButton.Size = UDim2.new(0, 50, 0, 32)
+HideButton.Font = Enum.Font.SourceSans
+HideButton.Text = "Hide"
+HideButton.TextColor3 = Color3.fromRGB(239, 239, 239)
+HideButton.TextScaled = true
+HideButton.TextSize = 14.000
+HideButton.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
+HideButton.TextWrapped = true
+
+ShowButton.Name = "ShowButton"
+ShowButton.Parent = ScreenGui
+ShowButton.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+ShowButton.BorderColor3 = Color3.fromRGB(21, 21, 21)
+ShowButton.Position = UDim2.new(0, 0, 0.45161289, 0)
+ShowButton.Size = UDim2.new(0, 94, 0, 50)
+ShowButton.Visible = false
+ShowButton.Font = Enum.Font.SourceSans
+ShowButton.Text = "Show"
+ShowButton.TextColor3 = Color3.fromRGB(239, 239, 239)
+ShowButton.TextScaled = true
+ShowButton.TextSize = 14.000
+ShowButton.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
+ShowButton.TextWrapped = true
+
+-- Scripts:
+
+local function VKLFAZO_fake_script() -- BedwarsGUI.LocalScript 
+	local script = Instance.new('LocalScript', BedwarsGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
+	end)
+end
+coroutine.wrap(VKLFAZO_fake_script)()
+local function JIODP_fake_script() -- printStruditywashere.LocalScript 
+	local script = Instance.new('LocalScript', printStruditywashere)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Strudity was here.")
+	end)
+end
+coroutine.wrap(JIODP_fake_script)()
+local function VCJLHGU_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.N1.MouseButton1Click:Connect(function()
+		script.Parent.ScrollingFrame.GUI1.Visible = true
+	end)
+end
+coroutine.wrap(VCJLHGU_fake_script)()
+local function HDOD_fake_script() -- Frame.DragScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(HDOD_fake_script)()
+local function AOZNTW_fake_script() -- ScreenGui.HideFrame 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	script.Parent.Frame.HideButton.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = false
+		script.Parent.ShowButton.Visible = true
+	end)
+end
+coroutine.wrap(AOZNTW_fake_script)()
+local function WJFLTVL_fake_script() -- ScreenGui.ShowFrame 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	script.Parent.ShowButton.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		script.Parent.ShowButton.Visible = false
+	end)
+end
+coroutine.wrap(WJFLTVL_fake_script)()

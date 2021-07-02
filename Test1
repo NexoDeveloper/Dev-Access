@@ -12,16 +12,19 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local GUI1 = Instance.new("Frame")
 local BedwarsGUI = Instance.new("TextButton")
 local GUI2 = Instance.new("Frame")
-local printStruditywashere = Instance.new("TextButton")
+local ComingSoon = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 local N1 = Instance.new("TextButton")
 local N2 = Instance.new("TextButton")
 local HideButton = Instance.new("TextButton")
+local TextLol = Instance.new("TextLabel")
 local ShowButton = Instance.new("TextButton")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
@@ -98,24 +101,36 @@ BedwarsGUI.TextWrapped = true
 GUI2.Name = "GUI2"
 GUI2.Parent = ScrollingFrame
 GUI2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GUI2.BackgroundTransparency = 1.000
 GUI2.Size = UDim2.new(0, 444, 0, 182)
-GUI2.Visible = false
 
-printStruditywashere.Name = "print(\"Strudity was here.\")"
-printStruditywashere.Parent = GUI2
-printStruditywashere.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-printStruditywashere.BackgroundTransparency = 0.900
-printStruditywashere.Position = UDim2.new(0.274157315, 0, 0.115384616, 0)
-printStruditywashere.Size = UDim2.new(0, 200, 0, 50)
-printStruditywashere.Font = Enum.Font.SourceSans
-printStruditywashere.Text = "Bedwars OP GUI"
-printStruditywashere.TextColor3 = Color3.fromRGB(239, 239, 239)
-printStruditywashere.TextScaled = true
-printStruditywashere.TextSize = 14.000
-printStruditywashere.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
-printStruditywashere.TextStrokeTransparency = 0.000
-printStruditywashere.TextWrapped = true
+ComingSoon.Name = "ComingSoon"
+ComingSoon.Parent = GUI2
+ComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ComingSoon.BackgroundTransparency = 0.900
+ComingSoon.Position = UDim2.new(0.0174006559, 0, 0.0549450554, 0)
+ComingSoon.Size = UDim2.new(0, 419, 0, 166)
+ComingSoon.Font = Enum.Font.SourceSans
+ComingSoon.Text = "Coming Soon"
+ComingSoon.TextColor3 = Color3.fromRGB(239, 239, 239)
+ComingSoon.TextScaled = true
+ComingSoon.TextSize = 14.000
+ComingSoon.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
+ComingSoon.TextStrokeTransparency = 0.000
+ComingSoon.TextWrapped = true
+
+TextLabel.Parent = ComingSoon
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.260143191, 0, 0.337349385, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.PatrickHand
+TextLabel.Text = "Literally coming soon"
+TextLabel.TextColor3 = Color3.fromRGB(239, 239, 239)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
 
 N1.Name = "N1"
 N1.Parent = Frame
@@ -159,6 +174,20 @@ HideButton.TextSize = 14.000
 HideButton.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
 HideButton.TextWrapped = true
 
+TextLol.Name = "TextLol"
+TextLol.Parent = Frame
+TextLol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLol.BackgroundTransparency = 1.000
+TextLol.Position = UDim2.new(0.282655239, 0, 0.515050173, 0)
+TextLol.Size = UDim2.new(0, 200, 0, 50)
+TextLol.Visible = false
+TextLol.Font = Enum.Font.PatrickHand
+TextLol.Text = "Discord coming soon"
+TextLol.TextColor3 = Color3.fromRGB(239, 239, 239)
+TextLol.TextSize = 40.000
+TextLol.TextStrokeColor3 = Color3.fromRGB(57, 57, 57)
+TextLol.TextStrokeTransparency = 0.000
+
 ShowButton.Name = "ShowButton"
 ShowButton.Parent = ScreenGui
 ShowButton.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
@@ -176,31 +205,36 @@ ShowButton.TextWrapped = true
 
 -- Scripts:
 
-local function VKLFAZO_fake_script() -- BedwarsGUI.LocalScript 
+local function WFGN_fake_script() -- BedwarsGUI.LocalScript 
 	local script = Instance.new('LocalScript', BedwarsGUI)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
 	end)
 end
-coroutine.wrap(VKLFAZO_fake_script)()
-local function JIODP_fake_script() -- printStruditywashere.LocalScript 
-	local script = Instance.new('LocalScript', printStruditywashere)
+coroutine.wrap(WFGN_fake_script)()
+local function HUME_fake_script() -- ComingSoon.LocalScript 
+	local script = Instance.new('LocalScript', ComingSoon)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		print("Strudity was here.")
+		script.Parent.TextLabel.Visible = true
+		script.Parent.Visible = false
+		wait(2)
+		script.Parent.TextLabel.Visible = false
+		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(JIODP_fake_script)()
-local function VCJLHGU_fake_script() -- Frame.LocalScript 
+coroutine.wrap(HUME_fake_script)()
+local function YJQO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.N1.MouseButton1Click:Connect(function()
 		script.Parent.ScrollingFrame.GUI1.Visible = true
+		script.Parent.TextLol.Visible = false
 	end)
 end
-coroutine.wrap(VCJLHGU_fake_script)()
-local function HDOD_fake_script() -- Frame.DragScript 
+coroutine.wrap(YJQO_fake_script)()
+local function IELOVQC_fake_script() -- Frame.DragScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -243,8 +277,8 @@ local function HDOD_fake_script() -- Frame.DragScript
 		end
 	end)
 end
-coroutine.wrap(HDOD_fake_script)()
-local function AOZNTW_fake_script() -- ScreenGui.HideFrame 
+coroutine.wrap(IELOVQC_fake_script)()
+local function HNOA_fake_script() -- ScreenGui.HideFrame 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Frame.HideButton.MouseButton1Click:Connect(function()
@@ -252,8 +286,8 @@ local function AOZNTW_fake_script() -- ScreenGui.HideFrame
 		script.Parent.ShowButton.Visible = true
 	end)
 end
-coroutine.wrap(AOZNTW_fake_script)()
-local function WJFLTVL_fake_script() -- ScreenGui.ShowFrame 
+coroutine.wrap(HNOA_fake_script)()
+local function NUJBN_fake_script() -- ScreenGui.ShowFrame 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.ShowButton.MouseButton1Click:Connect(function()
@@ -261,4 +295,4 @@ local function WJFLTVL_fake_script() -- ScreenGui.ShowFrame
 		script.Parent.ShowButton.Visible = false
 	end)
 end
-coroutine.wrap(WJFLTVL_fake_script)()
+coroutine.wrap(NUJBN_fake_script)()

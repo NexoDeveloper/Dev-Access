@@ -14,13 +14,22 @@ local BedwarsGUI = Instance.new("TextButton")
 local SwagModeDH = Instance.new("TextButton")
 local RaycodexDH = Instance.new("TextButton")
 local GUI2 = Instance.new("Frame")
-local ComingSoon = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
 local N1 = Instance.new("TextButton")
 local N2 = Instance.new("TextButton")
 local HideButton = Instance.new("TextButton")
+local N3 = Instance.new("TextButton")
+local Home = Instance.new("Frame")
+local TextLol2 = Instance.new("TextLabel")
 local TextLol = Instance.new("TextLabel")
+local VersionShow = Instance.new("TextLabel")
 local ShowButton = Instance.new("TextButton")
+local WelcomeScreen = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ScreenText = Instance.new("TextLabel")
+local GetStarted = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 
 --Properties:
 
@@ -33,6 +42,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
 Frame.BorderColor3 = Color3.fromRGB(21, 21, 21)
 Frame.Position = UDim2.new(0.275431871, 0, 0.216318786, 0)
 Frame.Size = UDim2.new(0, 467, 0, 299)
+Frame.Visible = false
 
 Topbar.Name = "Topbar"
 Topbar.Parent = Frame
@@ -77,6 +87,7 @@ ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderColor3 = Color3.fromRGB(21, 21, 21)
 ScrollingFrame.Position = UDim2.new(0.0235546045, 0, 0.357859522, 0)
 ScrollingFrame.Size = UDim2.new(0, 445, 0, 181)
+ScrollingFrame.Visible = false
 
 GUI1.Name = "GUI1"
 GUI1.Parent = ScrollingFrame
@@ -131,46 +142,33 @@ RaycodexDH.TextWrapped = true
 
 GUI2.Name = "GUI2"
 GUI2.Parent = ScrollingFrame
-GUI2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUI2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 GUI2.BackgroundTransparency = 1.000
 GUI2.Size = UDim2.new(0, 444, 0, 182)
 GUI2.Visible = false
 
-ComingSoon.Name = "ComingSoon"
-ComingSoon.Parent = GUI2
-ComingSoon.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
-ComingSoon.BorderColor3 = Color3.fromRGB(23, 23, 23)
-ComingSoon.Position = UDim2.new(0.0174006559, 0, 0.0549450554, 0)
-ComingSoon.Size = UDim2.new(0, 419, 0, 166)
-ComingSoon.Font = Enum.Font.SourceSans
-ComingSoon.Text = "Coming Soon"
-ComingSoon.TextColor3 = Color3.fromRGB(239, 239, 239)
-ComingSoon.TextScaled = true
-ComingSoon.TextSize = 14.000
-ComingSoon.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
-ComingSoon.TextStrokeTransparency = 0.000
-ComingSoon.TextWrapped = true
+Credits.Name = "Credits"
+Credits.Parent = GUI2
+Credits.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+Credits.BorderColor3 = Color3.fromRGB(23, 23, 23)
+Credits.Position = UDim2.new(0, 0, 0.368131876, 0)
+Credits.Size = UDim2.new(0, 432, 0, 50)
+Credits.Font = Enum.Font.PatrickHand
+Credits.Text = "Made by : Nexo Dev#6969"
+Credits.TextColor3 = Color3.fromRGB(239, 239, 239)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextStrokeTransparency = 0.000
+Credits.TextWrapped = true
 
-TextLabel.Parent = ComingSoon
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.260143191, 0, 0.337349385, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Visible = false
-TextLabel.Font = Enum.Font.PatrickHand
-TextLabel.Text = "Literally coming soon"
-TextLabel.TextColor3 = Color3.fromRGB(239, 239, 239)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextStrokeTransparency = 0.000
-TextLabel.TextWrapped = true
+UICorner.Parent = Credits
 
 N1.Name = "N1"
 N1.Parent = Frame
 N1.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
 N1.BorderColor3 = Color3.fromRGB(23, 23, 23)
 N1.Position = UDim2.new(0.0235546045, 0, 0.204013377, 0)
-N1.Size = UDim2.new(0, 203, 0, 29)
+N1.Size = UDim2.new(0, 160, 0, 29)
 N1.Font = Enum.Font.SourceSans
 N1.Text = "1"
 N1.TextColor3 = Color3.fromRGB(239, 239, 239)
@@ -183,8 +181,8 @@ N2.Name = "N2"
 N2.Parent = Frame
 N2.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
 N2.BorderColor3 = Color3.fromRGB(23, 23, 23)
-N2.Position = UDim2.new(0.541755915, 0, 0.204013377, 0)
-N2.Size = UDim2.new(0, 203, 0, 29)
+N2.Position = UDim2.new(0.633832991, 0, 0.204013377, 0)
+N2.Size = UDim2.new(0, 160, 0, 29)
 N2.Font = Enum.Font.SourceSans
 N2.Text = "2"
 N2.TextColor3 = Color3.fromRGB(239, 239, 239)
@@ -207,18 +205,68 @@ HideButton.TextSize = 14.000
 HideButton.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
 HideButton.TextWrapped = true
 
+N3.Name = "N3"
+N3.Parent = Frame
+N3.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+N3.BorderColor3 = Color3.fromRGB(23, 23, 23)
+N3.Position = UDim2.new(0.428265512, 0, 0.204013377, 0)
+N3.Size = UDim2.new(0, 67, 0, 29)
+N3.Font = Enum.Font.SourceSans
+N3.Text = "Home"
+N3.TextColor3 = Color3.fromRGB(239, 239, 239)
+N3.TextScaled = true
+N3.TextSize = 14.000
+N3.TextStrokeTransparency = 0.000
+N3.TextWrapped = true
+
+Home.Name = "Home"
+Home.Parent = Frame
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0, 0, 0.361204028, 0)
+Home.Size = UDim2.new(0, 467, 0, 191)
+
+TextLol2.Name = "TextLol2"
+TextLol2.Parent = Home
+TextLol2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLol2.BackgroundTransparency = 1.000
+TextLol2.Position = UDim2.new(0.198931739, 0, 0.315273106, 0)
+TextLol2.Size = UDim2.new(0, 281, 0, 68)
+TextLol2.Font = Enum.Font.PatrickHand
+TextLol2.Text = "Warning : If your doing this for dahood go to 1 tab and go to raycodex and unban if you wish to get from jail. I could try fixing this"
+TextLol2.TextColor3 = Color3.fromRGB(239, 239, 239)
+TextLol2.TextScaled = true
+TextLol2.TextSize = 40.000
+TextLol2.TextStrokeColor3 = Color3.fromRGB(57, 57, 57)
+TextLol2.TextStrokeTransparency = 0.000
+TextLol2.TextWrapped = true
+
 TextLol.Name = "TextLol"
-TextLol.Parent = Frame
+TextLol.Parent = Home
 TextLol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLol.BackgroundTransparency = 1.000
-TextLol.Position = UDim2.new(0.282655239, 0, 0.515050173, 0)
-TextLol.Size = UDim2.new(0, 200, 0, 50)
+TextLol.Position = UDim2.new(0.273560613, 0, 0.0379598737, 0)
+TextLol.Size = UDim2.new(0, 212, 0, 50)
 TextLol.Font = Enum.Font.PatrickHand
 TextLol.Text = "Discord coming soon"
 TextLol.TextColor3 = Color3.fromRGB(239, 239, 239)
 TextLol.TextSize = 40.000
 TextLol.TextStrokeColor3 = Color3.fromRGB(57, 57, 57)
 TextLol.TextStrokeTransparency = 0.000
+
+VersionShow.Name = "VersionShow"
+VersionShow.Parent = Home
+VersionShow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VersionShow.BackgroundTransparency = 1.000
+VersionShow.Position = UDim2.new(0.198931679, 0, 0.815273285, 0)
+VersionShow.Size = UDim2.new(0, 281, 0, 33)
+VersionShow.Font = Enum.Font.PatrickHand
+VersionShow.Text = "Early Version"
+VersionShow.TextColor3 = Color3.fromRGB(176, 170, 0)
+VersionShow.TextScaled = true
+VersionShow.TextSize = 40.000
+VersionShow.TextStrokeTransparency = 0.000
+VersionShow.TextWrapped = true
 
 ShowButton.Name = "ShowButton"
 ShowButton.Parent = ScreenGui
@@ -235,54 +283,88 @@ ShowButton.TextSize = 14.000
 ShowButton.TextStrokeColor3 = Color3.fromRGB(239, 239, 239)
 ShowButton.TextWrapped = true
 
+WelcomeScreen.Name = "WelcomeScreen"
+WelcomeScreen.Parent = ScreenGui
+WelcomeScreen.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+WelcomeScreen.BorderColor3 = Color3.fromRGB(21, 21, 21)
+WelcomeScreen.Position = UDim2.new(0.274467558, 0, 0.351043642, 0)
+WelcomeScreen.Size = UDim2.new(0, 467, 0, 156)
+
+UICorner_2.Parent = WelcomeScreen
+
+ScreenText.Name = "ScreenText"
+ScreenText.Parent = WelcomeScreen
+ScreenText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenText.BackgroundTransparency = 1.000
+ScreenText.Position = UDim2.new(0.0321199149, 0, 0.0773480684, 0)
+ScreenText.Size = UDim2.new(0, 437, 0, 67)
+ScreenText.Font = Enum.Font.SourceSans
+ScreenText.Text = "Early Access"
+ScreenText.TextColor3 = Color3.fromRGB(239, 239, 239)
+ScreenText.TextScaled = true
+ScreenText.TextSize = 14.000
+ScreenText.TextStrokeTransparency = 0.000
+ScreenText.TextWrapped = true
+
+GetStarted.Name = "GetStarted"
+GetStarted.Parent = WelcomeScreen
+GetStarted.BackgroundColor3 = Color3.fromRGB(27, 255, 2)
+GetStarted.Position = UDim2.new(0.0321199149, 0, 0.532051265, 0)
+GetStarted.Size = UDim2.new(0, 437, 0, 50)
+GetStarted.Font = Enum.Font.PatrickHand
+GetStarted.Text = "Get Started"
+GetStarted.TextColor3 = Color3.fromRGB(235, 235, 235)
+GetStarted.TextScaled = true
+GetStarted.TextSize = 14.000
+GetStarted.TextStrokeTransparency = 0.000
+GetStarted.TextWrapped = true
+
+UICorner_3.Parent = GetStarted
+
 -- Scripts:
 
-local function KMQB_fake_script() -- BedwarsGUI.LocalScript 
+local function EYZZDXL_fake_script() -- BedwarsGUI.LocalScript 
 	local script = Instance.new('LocalScript', BedwarsGUI)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
 	end)
 end
-coroutine.wrap(KMQB_fake_script)()
-local function MUKOHD_fake_script() -- SwagModeDH.LocalScript 
+coroutine.wrap(EYZZDXL_fake_script)()
+local function NDNVN_fake_script() -- SwagModeDH.LocalScript 
 	local script = Instance.new('LocalScript', SwagModeDH)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
 	end)
 end
-coroutine.wrap(MUKOHD_fake_script)()
-local function OZHQHFV_fake_script() -- RaycodexDH.LocalScript 
+coroutine.wrap(NDNVN_fake_script)()
+local function YCDLI_fake_script() -- RaycodexDH.LocalScript 
 	local script = Instance.new('LocalScript', RaycodexDH)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
 	end)
 end
-coroutine.wrap(OZHQHFV_fake_script)()
-local function CCQB_fake_script() -- ComingSoon.LocalScript 
-	local script = Instance.new('LocalScript', ComingSoon)
+coroutine.wrap(YCDLI_fake_script)()
+local function STVKA_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.TextLabel.Visible = true
-		script.Parent.Visible = false
-		wait(2)
-		script.Parent.TextLabel.Visible = false
-		script.Parent.Visible = true
-	end)
+	script.Parent.Text = "Made by : Nexo Dev#6969"
 end
-coroutine.wrap(CCQB_fake_script)()
-local function UNAB_fake_script() -- Frame.LocalScript 
+coroutine.wrap(STVKA_fake_script)()
+local function OJWPRWD_fake_script() -- Frame.GUI1Open 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.N1.MouseButton1Click:Connect(function()
+		script.Parent.ScrollingFrame.Visible = true
 		script.Parent.ScrollingFrame.GUI1.Visible = true
-		script.Parent.TextLol.Visible = false
+		script.Parent.ScrollingFrame.GUI2.Visible = false
+		script.Parent.Home.Visible = false
 	end)
 end
-coroutine.wrap(UNAB_fake_script)()
-local function GVODRRH_fake_script() -- Frame.DragScript 
+coroutine.wrap(OJWPRWD_fake_script)()
+local function JVNP_fake_script() -- Frame.DragScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -325,17 +407,30 @@ local function GVODRRH_fake_script() -- Frame.DragScript
 		end
 	end)
 end
-coroutine.wrap(GVODRRH_fake_script)()
-local function TKIIXVC_fake_script() -- Frame.LocalScript 
+coroutine.wrap(JVNP_fake_script)()
+local function DCWC_fake_script() -- Frame.GUI2Open 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.N2.MouseButton1Click:Connect(function()
+		script.Parent.ScrollingFrame.Visible = true
+		script.Parent.ScrollingFrame.GUI1.Visible = false
 		script.Parent.ScrollingFrame.GUI2.Visible = true
-		script.Parent.TextLol.Visible = false
+		script.Parent.Home.Visible = false
 	end)
 end
-coroutine.wrap(TKIIXVC_fake_script)()
-local function KEWLXZW_fake_script() -- ScreenGui.HideFrame 
+coroutine.wrap(DCWC_fake_script)()
+local function PCLB_fake_script() -- Frame.HomeOpen 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.N3.MouseButton1Click:Connect(function()
+		script.Parent.ScrollingFrame.Visible = false
+		script.Parent.ScrollingFrame.GUI1.Visible = false
+		script.Parent.ScrollingFrame.GUI2.Visible = false
+		script.Parent.Home.Visible = true
+	end)
+end
+coroutine.wrap(PCLB_fake_script)()
+local function KHNLQUN_fake_script() -- ScreenGui.HideFrame 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Frame.HideButton.MouseButton1Click:Connect(function()
@@ -343,8 +438,8 @@ local function KEWLXZW_fake_script() -- ScreenGui.HideFrame
 		script.Parent.ShowButton.Visible = true
 	end)
 end
-coroutine.wrap(KEWLXZW_fake_script)()
-local function ADOE_fake_script() -- ScreenGui.ShowFrame 
+coroutine.wrap(KHNLQUN_fake_script)()
+local function GTXEJT_fake_script() -- ScreenGui.ShowFrame 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.ShowButton.MouseButton1Click:Connect(function()
@@ -352,4 +447,25 @@ local function ADOE_fake_script() -- ScreenGui.ShowFrame
 		script.Parent.ShowButton.Visible = false
 	end)
 end
-coroutine.wrap(ADOE_fake_script)()
+coroutine.wrap(GTXEJT_fake_script)()
+local function ARQVA_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	script.Parent.WelcomeScreen.GetStarted.MouseButton1Click:Connect(function()
+		script.Parent.WelcomeScreen.Visible = false
+		script.Parent.Frame.Visible = true
+	end)
+end
+coroutine.wrap(ARQVA_fake_script)()
+local function BKIPLNG_fake_script() -- ScreenGui.SendNotification 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game.StarterGui:SetCore("SendNotification",{
+		Title = "- Early Access -"; 
+		Text = "Successfully executed Nexo Dev UI";
+		Icon = "";
+		Duration = 5;
+	})
+	
+end
+coroutine.wrap(BKIPLNG_fake_script)()

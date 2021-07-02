@@ -18,10 +18,13 @@ local R1 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local A1 = Instance.new("Frame")
 local textidk = Instance.new("TextLabel")
-local k1 = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local k2 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local k1_2 = Instance.new("TextButton")
+local k1 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local k3 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 local A2 = Instance.new("Frame")
 local Home = Instance.new("Frame")
 local textidk_2 = Instance.new("TextLabel")
@@ -113,7 +116,7 @@ R1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 R1.Position = UDim2.new(0.168521583, 0, 0.781507492, 0)
 R1.Size = UDim2.new(0, 92, 0, 26)
 R1.Font = Enum.Font.SourceSans
-R1.Text = "Respawn"
+R1.Text = "Respawn ( does not work )"
 R1.TextColor3 = Color3.fromRGB(239, 239, 239)
 R1.TextScaled = true
 R1.TextSize = 14.000
@@ -142,10 +145,32 @@ textidk.TextSize = 14.000
 textidk.TextTransparency = 0.800
 textidk.TextWrapped = true
 
+ScrollingFrame.Parent = A1
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(29, 29, 29)
+ScrollingFrame.Position = UDim2.new(0.000446601189, 0, 0.162361622, 0)
+ScrollingFrame.Size = UDim2.new(0, 297, 0, 225)
+
+k2.Name = "k2"
+k2.Parent = ScrollingFrame
+k2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+k2.Position = UDim2.new(0.164429545, 0, 0.114391148, 0)
+k2.Size = UDim2.new(0, 200, 0, 28)
+k2.Font = Enum.Font.SourceSans
+k2.Text = "FE Animations"
+k2.TextColor3 = Color3.fromRGB(239, 239, 239)
+k2.TextScaled = true
+k2.TextSize = 14.000
+k2.TextWrapped = true
+
+UICorner_6.Parent = k2
+
 k1.Name = "k1"
-k1.Parent = A1
+k1.Parent = ScrollingFrame
 k1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-k1.Position = UDim2.new(0.164429545, 0, 0.239852399, 0)
+k1.Position = UDim2.new(0.164429545, 0, 0.0387453884, 0)
 k1.Size = UDim2.new(0, 200, 0, 28)
 k1.Font = Enum.Font.SourceSans
 k1.Text = "FE Car"
@@ -154,21 +179,21 @@ k1.TextScaled = true
 k1.TextSize = 14.000
 k1.TextWrapped = true
 
-UICorner_6.Parent = k1
+UICorner_7.Parent = k1
 
-k1_2.Name = "k1"
-k1_2.Parent = A1
-k1_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-k1_2.Position = UDim2.new(0.164429545, 0, 0.398523986, 0)
-k1_2.Size = UDim2.new(0, 200, 0, 28)
-k1_2.Font = Enum.Font.SourceSans
-k1_2.Text = "FE Animations"
-k1_2.TextColor3 = Color3.fromRGB(239, 239, 239)
-k1_2.TextScaled = true
-k1_2.TextSize = 14.000
-k1_2.TextWrapped = true
+k3.Name = "k3"
+k3.Parent = ScrollingFrame
+k3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+k3.Position = UDim2.new(0.164429545, 0, 0.193726912, 0)
+k3.Size = UDim2.new(0, 200, 0, 28)
+k3.Font = Enum.Font.SourceSans
+k3.Text = "FE Gun"
+k3.TextColor3 = Color3.fromRGB(239, 239, 239)
+k3.TextScaled = true
+k3.TextSize = 14.000
+k3.TextWrapped = true
 
-UICorner_7.Parent = k1_2
+UICorner_8.Parent = k3
 
 A2.Name = "A2"
 A2.Parent = Main
@@ -215,7 +240,7 @@ textidk_3.TextWrapped = true
 
 -- Scripts:
 
-local function CBOIDB_fake_script() -- R1.LocalScript 
+local function QLNWCS_fake_script() -- R1.LocalScript 
 	local script = Instance.new('LocalScript', R1)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -229,8 +254,8 @@ local function CBOIDB_fake_script() -- R1.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(CBOIDB_fake_script)()
-local function IJUJY_fake_script() -- Main.ToggleDragGui 
+coroutine.wrap(QLNWCS_fake_script)()
+local function MIRJNSH_fake_script() -- Main.ToggleDragGui 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -273,8 +298,8 @@ local function IJUJY_fake_script() -- Main.ToggleDragGui
 		end
 	end)
 end
-coroutine.wrap(IJUJY_fake_script)()
-local function RAPVINU_fake_script() -- Main.MainOpen 
+coroutine.wrap(MIRJNSH_fake_script)()
+local function RGXQ_fake_script() -- Main.MainOpen 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.SideBar.N1.MouseButton1Click:Connect(function()
@@ -283,24 +308,32 @@ local function RAPVINU_fake_script() -- Main.MainOpen
 		script.Parent.A2.Visible = false
 	end)
 end
-coroutine.wrap(RAPVINU_fake_script)()
-local function RAVM_fake_script() -- k1.LocalScript 
+coroutine.wrap(RGXQ_fake_script)()
+local function WOQOKXG_fake_script() -- k2.LocalScript 
+	local script = Instance.new('LocalScript', k2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/animationedit/main/GUI',true))()
+	end)
+end
+coroutine.wrap(WOQOKXG_fake_script)()
+local function RKMQKH_fake_script() -- k1.LocalScript 
 	local script = Instance.new('LocalScript', k1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
 	end)
 end
-coroutine.wrap(RAVM_fake_script)()
-local function CNKBXIK_fake_script() -- k1_2.LocalScript 
-	local script = Instance.new('LocalScript', k1_2)
+coroutine.wrap(RKMQKH_fake_script)()
+local function CXVN_fake_script() -- k3.LocalScript 
+	local script = Instance.new('LocalScript', k3)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/animationedit/main/GUI',true))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/NexoDeveloper/Dev-Access/main/FEGun',true))()
 	end)
 end
-coroutine.wrap(CNKBXIK_fake_script)()
-local function EEBXDAB_fake_script() -- Main.HomeOpen 
+coroutine.wrap(CXVN_fake_script)()
+local function LUQYATO_fake_script() -- Main.HomeOpen 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.SideBar.Home1.MouseButton1Click:Connect(function()
@@ -309,8 +342,8 @@ local function EEBXDAB_fake_script() -- Main.HomeOpen
 		script.Parent.A2.Visible = false
 	end)
 end
-coroutine.wrap(EEBXDAB_fake_script)()
-local function PYDKE_fake_script() -- Main.SendNotification 
+coroutine.wrap(LUQYATO_fake_script)()
+local function NERAL_fake_script() -- Main.SendNotification 
 	local script = Instance.new('LocalScript', Main)
 
 	game.StarterGui:SetCore("SendNotification",{
@@ -321,4 +354,4 @@ local function PYDKE_fake_script() -- Main.SendNotification
 	})
 	
 end
-coroutine.wrap(PYDKE_fake_script)()
+coroutine.wrap(NERAL_fake_script)()

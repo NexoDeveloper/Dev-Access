@@ -10,25 +10,36 @@ local N1 = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local N2 = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local N3 = Instance.new("TextButton")
+local T1 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Home1 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local R1 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local N3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 local A1 = Instance.new("Frame")
 local textidk = Instance.new("TextLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local k2 = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local k1 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local k3 = Instance.new("TextButton")
+local k1 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
+local k3 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local k4 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
 local A2 = Instance.new("Frame")
 local Home = Instance.new("Frame")
 local textidk_2 = Instance.new("TextLabel")
 local textidk_3 = Instance.new("TextLabel")
+local Random = Instance.new("Frame")
+local CustomAnim = Instance.new("TextButton")
+local AS1 = Instance.new("Frame")
+local AnimsCroll = Instance.new("ScrollingFrame")
+local Sit = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local textidk_4 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -80,20 +91,20 @@ N2.TextWrapped = true
 
 UICorner_2.Parent = N2
 
-N3.Name = "N3"
-N3.Parent = SideBar
-N3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-N3.BackgroundTransparency = 1.000
-N3.Position = UDim2.new(0.0350137614, 0, 0.915468335, 0)
-N3.Size = UDim2.new(0, 128, 0, 22)
-N3.Font = Enum.Font.SourceSans
-N3.Text = "Made by : Nexo Dev#6969"
-N3.TextColor3 = Color3.fromRGB(239, 239, 239)
-N3.TextScaled = true
-N3.TextSize = 14.000
-N3.TextWrapped = true
+T1.Name = "T1"
+T1.Parent = SideBar
+T1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+T1.BackgroundTransparency = 1.000
+T1.Position = UDim2.new(0.0350137614, 0, 0.915468335, 0)
+T1.Size = UDim2.new(0, 128, 0, 22)
+T1.Font = Enum.Font.SourceSans
+T1.Text = "Made by : Nexo Dev#6969"
+T1.TextColor3 = Color3.fromRGB(239, 239, 239)
+T1.TextScaled = true
+T1.TextSize = 14.000
+T1.TextWrapped = true
 
-UICorner_3.Parent = N3
+UICorner_3.Parent = T1
 
 Home1.Name = "Home1"
 Home1.Parent = SideBar
@@ -124,12 +135,28 @@ R1.TextWrapped = true
 
 UICorner_5.Parent = R1
 
+N3.Name = "N3"
+N3.Parent = SideBar
+N3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+N3.BackgroundTransparency = 0.600
+N3.Position = UDim2.new(0.0647481978, 0, 0.493899763, 0)
+N3.Size = UDim2.new(0, 120, 0, 28)
+N3.Font = Enum.Font.SourceSans
+N3.Text = "Random"
+N3.TextColor3 = Color3.fromRGB(239, 239, 239)
+N3.TextScaled = true
+N3.TextSize = 14.000
+N3.TextWrapped = true
+
+UICorner_6.Parent = N3
+
 A1.Name = "A1"
 A1.Parent = Main
 A1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 A1.BackgroundTransparency = 1.000
 A1.Position = UDim2.new(0.316513747, 0, -0.00370370364, 0)
 A1.Size = UDim2.new(0, 298, 0, 271)
+A1.Visible = false
 
 textidk.Name = "textidk"
 textidk.Parent = A1
@@ -165,7 +192,7 @@ k2.TextScaled = true
 k2.TextSize = 14.000
 k2.TextWrapped = true
 
-UICorner_6.Parent = k2
+UICorner_7.Parent = k2
 
 k1.Name = "k1"
 k1.Parent = ScrollingFrame
@@ -179,7 +206,7 @@ k1.TextScaled = true
 k1.TextSize = 14.000
 k1.TextWrapped = true
 
-UICorner_7.Parent = k1
+UICorner_8.Parent = k1
 
 k3.Name = "k3"
 k3.Parent = ScrollingFrame
@@ -193,7 +220,21 @@ k3.TextScaled = true
 k3.TextSize = 14.000
 k3.TextWrapped = true
 
-UICorner_8.Parent = k3
+UICorner_9.Parent = k3
+
+k4.Name = "k4"
+k4.Parent = ScrollingFrame
+k4.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+k4.Position = UDim2.new(0.164429545, 0, 0.27675274, 0)
+k4.Size = UDim2.new(0, 200, 0, 28)
+k4.Font = Enum.Font.SourceSans
+k4.Text = "Become a Cube"
+k4.TextColor3 = Color3.fromRGB(239, 239, 239)
+k4.TextScaled = true
+k4.TextSize = 14.000
+k4.TextWrapped = true
+
+UICorner_10.Parent = k4
 
 A2.Name = "A2"
 A2.Parent = Main
@@ -208,7 +249,6 @@ Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Home.BackgroundTransparency = 1.000
 Home.Position = UDim2.new(0.316513747, 0, -0.00370370364, 0)
 Home.Size = UDim2.new(0, 298, 0, 271)
-Home.Visible = false
 
 textidk_2.Name = "textidk"
 textidk_2.Parent = Home
@@ -238,9 +278,81 @@ textidk_3.TextSize = 14.000
 textidk_3.TextTransparency = 0.800
 textidk_3.TextWrapped = true
 
+Random.Name = "Random"
+Random.Parent = Main
+Random.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Random.BackgroundTransparency = 1.000
+Random.Position = UDim2.new(0.316513747, 0, -0.00370370364, 0)
+Random.Size = UDim2.new(0, 298, 0, 271)
+Random.Visible = false
+
+CustomAnim.Name = "CustomAnim"
+CustomAnim.Parent = Random
+CustomAnim.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+CustomAnim.BorderColor3 = Color3.fromRGB(21, 21, 21)
+CustomAnim.Position = UDim2.new(0.164429531, 0, 0.405904055, 0)
+CustomAnim.Size = UDim2.new(0, 200, 0, 50)
+CustomAnim.Font = Enum.Font.SourceSans
+CustomAnim.Text = "Open Custom Anims"
+CustomAnim.TextColor3 = Color3.fromRGB(239, 239, 239)
+CustomAnim.TextScaled = true
+CustomAnim.TextSize = 14.000
+CustomAnim.TextWrapped = true
+
+AS1.Name = "AS1"
+AS1.Parent = Random
+AS1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AS1.BackgroundTransparency = 1.000
+AS1.Size = UDim2.new(0, 298, 0, 271)
+AS1.Visible = false
+
+AnimsCroll.Name = "AnimsCroll"
+AnimsCroll.Parent = AS1
+AnimsCroll.Active = true
+AnimsCroll.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+AnimsCroll.BackgroundTransparency = 1.000
+AnimsCroll.BorderColor3 = Color3.fromRGB(29, 29, 29)
+AnimsCroll.BorderSizePixel = 0
+AnimsCroll.Position = UDim2.new(0, 0, 0.00369003695, 0)
+AnimsCroll.Size = UDim2.new(0, 298, 0, 270)
+
+Sit.Name = "Sit"
+Sit.Parent = AnimsCroll
+Sit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sit.Position = UDim2.new(0.164429531, 0, 0.0977859795, 0)
+Sit.Size = UDim2.new(0, 200, 0, 50)
+Sit.Font = Enum.Font.SourceSans
+Sit.Text = "sit"
+Sit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sit.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = AnimsCroll
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(0.164429531, 0, 0.936709046, 0)
+Close.Size = UDim2.new(0, 200, 0, 19)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "Close"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+textidk_4.Name = "textidk"
+textidk_4.Parent = Random
+textidk_4.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+textidk_4.BorderColor3 = Color3.fromRGB(21, 21, 21)
+textidk_4.Position = UDim2.new(0, 0, 0.00369003415, 0)
+textidk_4.Size = UDim2.new(0, 298, 0, 43)
+textidk_4.Font = Enum.Font.SourceSans
+textidk_4.Text = "Random"
+textidk_4.TextColor3 = Color3.fromRGB(239, 239, 239)
+textidk_4.TextScaled = true
+textidk_4.TextSize = 14.000
+textidk_4.TextTransparency = 0.800
+textidk_4.TextWrapped = true
+
 -- Scripts:
 
-local function QLNWCS_fake_script() -- R1.LocalScript 
+local function SDSK_fake_script() -- R1.LocalScript 
 	local script = Instance.new('LocalScript', R1)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -254,8 +366,8 @@ local function QLNWCS_fake_script() -- R1.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(QLNWCS_fake_script)()
-local function MIRJNSH_fake_script() -- Main.ToggleDragGui 
+coroutine.wrap(SDSK_fake_script)()
+local function QZHV_fake_script() -- Main.ToggleDragGui 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -298,52 +410,213 @@ local function MIRJNSH_fake_script() -- Main.ToggleDragGui
 		end
 	end)
 end
-coroutine.wrap(MIRJNSH_fake_script)()
-local function RGXQ_fake_script() -- Main.MainOpen 
+coroutine.wrap(QZHV_fake_script)()
+local function XOADNQQ_fake_script() -- Main.MainOpen 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.SideBar.N1.MouseButton1Click:Connect(function()
 		script.Parent.Home.Visible = false
 		script.Parent.A1.Visible = true
 		script.Parent.A2.Visible = false
+		script.Parent.Random.Visible = false
 	end)
 end
-coroutine.wrap(RGXQ_fake_script)()
-local function WOQOKXG_fake_script() -- k2.LocalScript 
+coroutine.wrap(XOADNQQ_fake_script)()
+local function VGMVKA_fake_script() -- k2.LocalScript 
 	local script = Instance.new('LocalScript', k2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/animationedit/main/GUI',true))()
 	end)
 end
-coroutine.wrap(WOQOKXG_fake_script)()
-local function RKMQKH_fake_script() -- k1.LocalScript 
+coroutine.wrap(VGMVKA_fake_script)()
+local function BJLF_fake_script() -- k1.LocalScript 
 	local script = Instance.new('LocalScript', k1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
 	end)
 end
-coroutine.wrap(RKMQKH_fake_script)()
-local function CXVN_fake_script() -- k3.LocalScript 
+coroutine.wrap(BJLF_fake_script)()
+local function UJATYN_fake_script() -- k3.LocalScript 
 	local script = Instance.new('LocalScript', k3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/NexoDeveloper/Dev-Access/main/FEGun',true))()
 	end)
 end
-coroutine.wrap(CXVN_fake_script)()
-local function LUQYATO_fake_script() -- Main.HomeOpen 
+coroutine.wrap(UJATYN_fake_script)()
+local function KPEBKMM_fake_script() -- k4.LocalScript 
+	local script = Instance.new('LocalScript', k4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local runservice=game:service"RunService";
+		local player=game:service"Players"["LocalPlayer"];
+		local character=player["Character"];
+		--character["Head"]:FindFirstChildOfClass"SpecialMesh":Destroy();
+		character["Humanoid"].HipHeight=-2;
+		wait(1)
+	
+		local plr = game.Players.LocalPlayer
+		game:GetService("RunService").Stepped:Connect(function()
+			setsimulationradius(9e9,9e9)
+			plr.ReplicationFocus = workspace
+			settings().Physics.AllowSleep = false
+		end)
+	
+	
+	
+	
+		--Keybinds
+		_G.UnReanimateKey = "q" --The keybind for unreanimating.
+		_G.ReanimateKey = "e" --The keybind for reanimating.
+		_G.R6ToggleKey = "r" --The keybind for toggling R15 to R6.
+		_G.GodmodeToggleKey = "t" --The keybind for toggling godmode.
+		--Options
+		_G.FastLoading = true --Set to true if you want godmode to load faster. (Experimental)
+		_G.CharacterBug = false --Set to true if your uppertorso floats when using godmode with R15.
+		_G.GodMode = true --Set to true if you want godmode.
+		if game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").RigType == Enum.HumanoidRigType.R15 then
+			_G.R6 = true --Set to true if you wanna enable R15 to R6 when your R15.
+		else
+			_G.R6 = false --Set to true if you wanna enable R15 to R6 when your R15.
+		end
+		_G.AutoReanimate = true --Set to true if you want to auto reanimate and disable keybinds after executing.
+	
+		loadstring(game:HttpGet("https://paste.ee/r/5K7Kc/0"))()
+	
+		repeat wait() until _G.MSG ~= nil
+		repeat wait() until _G.MSG.Text == ""
+		wait(0.5)
+	
+		local client = game:GetService("Players").LocalPlayer
+		local char = client.Character
+		local nullware = char.NullwareReanim
+		local neck = nullware.Torso.Neck
+	
+		if char.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+			neck.C0 = neck.C0 + Vector3.new(0,-1.001, 0.01)
+			char.Head:FindFirstChildOfClass("Decal"):Destroy()
+			char.Head:FindFirstChildOfClass("SpecialMesh"):Destroy()
+			for i, v in pairs(nullware:GetChildren()) do
+				if v:IsA('Accessory') then
+					local handle = v.Handle
+					if handle:FindFirstChild("HatAttachment") or handle:FindFirstChild("HairAttachment") or handle:FindFirstChild("FaceCenterAttachment") then
+						local weld = v.Handle.AccessoryWeld
+						weld.C0 = weld.C0 + Vector3.new(0,-1,0)
+					end
+				end
+			end
+			char.Head.AlignPosition:Destroy()
+			char.Head.AlignOrientation:Destroy()
+			local function weldpart(part0, part1)
+				local att0 = Instance.new("Attachment", part0)
+				att0.Position = Vector3.new(0, -0.49, -0.01) --change the position to position it customly
+				att0.Rotation = Vector3.new(0, 0, 0) --change the rotation to rotate it customly (mostly used for anims as i know)
+				local att1 = Instance.new("Attachment", part1)
+				att1.Position = Vector3.new(0,0,0)
+				local AP = Instance.new("AlignPosition", part0)
+				AP.Attachment0 = att0
+				AP.Attachment1 = att1
+				AP.RigidityEnabled = false
+				AP.ReactionForceEnabled = false
+				AP.ApplyAtCenterOfMass = false
+				AP.MaxForce = 9999999
+				AP.MaxVelocity = math.huge
+				AP.Responsiveness = 2000
+				local AO = Instance.new("AlignOrientation", part0)
+				AO.Attachment0 = att0
+				AO.Attachment1 = att1
+				AO.ReactionTorqueEnabled = true
+				AO.PrimaryAxisOnly = false
+				AO.MaxTorque = 9999999
+				AO.MaxAngularVelocity = math.huge
+				AO.Responsiveness = 2000
+			end
+	
+			weldpart(char.Head, nullware.Torso)
+		else
+			neck.C0 = neck.C0 + Vector3.new(0,-1.001, 0.01)
+			char.Head:FindFirstChildOfClass("Decal"):Destroy()
+			char.Head:FindFirstChildOfClass("SpecialMesh"):Destroy()
+			for i, v in pairs(nullware:GetChildren()) do
+				if v:IsA('Accessory') then
+					local handle = v.Handle
+					if handle:FindFirstChild("HatAttachment") or handle:FindFirstChild("HairAttachment") or handle:FindFirstChild("FaceCenterAttachment") then
+						local weld = v.Handle.AccessoryWeld
+						weld.C0 = weld.C0 + Vector3.new(0,-1,0)
+					end
+				end
+			end
+			char.Head.AlignPosition:Destroy()
+			char.Head.AlignOrientation:Destroy()
+			local function weldpart(part0, part1)
+				local att0 = Instance.new("Attachment", part0)
+				att0.Position = Vector3.new(0, -0.19, -0.01) --change the position to position it customly
+				att0.Rotation = Vector3.new(0, 0, 0) --change the rotation to rotate it customly (mostly used for anims as i know)
+				local att1 = Instance.new("Attachment", part1)
+				att1.Position = Vector3.new(0,0,0)
+				local AP = Instance.new("AlignPosition", part0)
+				AP.Attachment0 = att0
+				AP.Attachment1 = att1
+				AP.RigidityEnabled = false
+				AP.ReactionForceEnabled = false
+				AP.ApplyAtCenterOfMass = false
+				AP.MaxForce = 9999999
+				AP.MaxVelocity = math.huge
+				AP.Responsiveness = 2000
+				local AO = Instance.new("AlignOrientation", part0)
+				AO.Attachment0 = att0
+				AO.Attachment1 = att1
+				AO.ReactionTorqueEnabled = true
+				AO.PrimaryAxisOnly = false
+				AO.MaxTorque = 9999999
+				AO.MaxAngularVelocity = math.huge
+				AO.Responsiveness = 2000
+			end
+	
+			weldpart(char.Head, nullware.Torso)
+		end
+		wait(3)
+	
+		local plr = game.Players.LocalPlayer
+		game:GetService("RunService").Stepped:Connect(function()
+			setsimulationradius(9e9,9e9)
+			plr.ReplicationFocus = workspace
+			settings().Physics.AllowSleep = false
+		end)
+	
+		local runservice=game:service"RunService";
+		local player=game:service"Players"["LocalPlayer"];
+		local character=player["Character"];
+		--character["Head"]:FindFirstChildOfClass"SpecialMesh":Destroy();
+	
+		character["Humanoid"].HipHeight=-2;
+		character["Left Leg"]:BreakJoints();
+		character["Right Leg"]:BreakJoints();
+		character["Left Arm"]:BreakJoints();
+		character["Right Arm"]:BreakJoints();
+		while runservice["Heartbeat"]:Wait() do
+			character["Left Leg"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(0.5,0,0);
+			character["Right Leg"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(-0.5,0,0);
+			character["Left Arm"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(-0.5,0,1);
+			character["Right Arm"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(0.5,0,1);
+		end
+	end)
+end
+coroutine.wrap(KPEBKMM_fake_script)()
+local function WOAP_fake_script() -- Main.HomeOpen 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.SideBar.Home1.MouseButton1Click:Connect(function()
 		script.Parent.Home.Visible = true
 		script.Parent.A1.Visible = false
 		script.Parent.A2.Visible = false
+		script.Parent.Random.Visible = false
 	end)
 end
-coroutine.wrap(LUQYATO_fake_script)()
-local function NERAL_fake_script() -- Main.SendNotification 
+coroutine.wrap(WOAP_fake_script)()
+local function EGHVPW_fake_script() -- Main.SendNotification 
 	local script = Instance.new('LocalScript', Main)
 
 	game.StarterGui:SetCore("SendNotification",{
@@ -354,4 +627,58 @@ local function NERAL_fake_script() -- Main.SendNotification
 	})
 	
 end
-coroutine.wrap(NERAL_fake_script)()
+coroutine.wrap(EGHVPW_fake_script)()
+local function KMNW_fake_script() -- Sit.LocalScript 
+	local script = Instance.new('LocalScript', Sit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local UIS = game:GetService("UserInputService")
+		local Posed = false
+		local Player = game.Players.LocalPlayer
+		local Animation = Instance.new("Animation")
+		Animation.AnimationId = "rbxassetid://243999792"
+		local Track = Player.Character:WaitForChild("Humanoid"):LoadAnimation(Animation)
+	
+		UIS.InputBegan:Connect(function(input, gameProcessed)
+			if input.KeyCode == Enum.KeyCode.T and not Posed then
+				Posed = true
+				Track:Play()
+				wait(.5)
+				Track:AdjustSpeed(0)
+			elseif input.KeyCode == Enum.KeyCode.T and Posed then
+				Posed = false
+				Track:Stop()
+			end
+		end)
+	end)
+end
+coroutine.wrap(KMNW_fake_script)()
+local function AYFZOLT_fake_script() -- Random.LocalScript 
+	local script = Instance.new('LocalScript', Random)
+
+	script.Parent.CustomAnim.MouseButton1Click:Connect(function()
+		script.Parent.AS1.Visible = true
+		script.Parent.CustomAnim.Visible = false
+	end)
+end
+coroutine.wrap(AYFZOLT_fake_script)()
+local function LXPEL_fake_script() -- Random.LocalScript 
+	local script = Instance.new('LocalScript', Random)
+
+	script.Parent.AS1.AnimsCroll.Close.MouseButton1Click:Connect(function()
+		script.Parent.AS1.Visible = false
+		script.Parent.CustomAnim.Visible = true
+	end)
+end
+coroutine.wrap(LXPEL_fake_script)()
+local function UBFJYMJ_fake_script() -- Main.RandomOpen 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.SideBar.N3.MouseButton1Click:Connect(function()
+		script.Parent.Home.Visible = false
+		script.Parent.A1.Visible = false
+		script.Parent.A2.Visible = false
+		script.Parent.Random.Visible = true
+	end)
+end
+coroutine.wrap(UBFJYMJ_fake_script)()
